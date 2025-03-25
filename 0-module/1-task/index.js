@@ -1,3 +1,7 @@
 function sum(m, n) {
-  // ваш код...
+  if (typeof m !== "number" || typeof n !== "number") { return ' Not a number'; }
+
+   return m + n
 }
+
+
