@@ -1,3 +1,8 @@
 function getMinMax(str) {
-  // ваш код...
+  const array = str.split(" ").filter(el =>  isFinite(el))
+
+  const min= Math.min(...array)
+  const max = Math.max(...array)
+  return {"min" : min, "max" : max}
+
 }
